@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html> <!--https://brittanychiang.com/-->
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>Kushal Timsina</title>
+    </head>
+    <body>
+        <div class="nav">
+            <div>
+                <a>&lt;<a class="green nav-item nav-1" href="./index.html"> Home </a>&gt;</a>
+            </div>
+            <div>
+                <a>&lt;<a class="green nav-item nav-2" href="./about-me.html"> About Me </a>&gt;</a>
+            </div>
+            <div>
+                <a>&lt;<a class="green nav-item nav-3" href="./hobbies.html"> Hobbies </a>&gt;</a>
+            </div>
+            <div>
+                <a>&lt;<a class="green nav-item nav-4" href="./future-plans.html"> Future Plans </a>&gt;</a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="left">
+                <h2 class="green hi">Hi, I'm</a>
+                <h1 class="kushal">Kushal Timsina.</h1>
+                <h1 class="subtext">I develop <span class="l1 partial-subtext">websites</span>, <span class="l2 partial-subtext">games</span>, and <span class="l3 partial-subtext">software</span>.</h1>
+                <p class="desc">Hello! I'm Kushal, an MCC student majoring in Computer Science. Currently, I am working on a next-generation quiz app called <a href="https://quizzynow.com/about-us" class="quizzy">Quizzy</a>.</p>
+            </div>
+            <div class="right">
+                <div>
+                    <img class="slideshow-img web-img" src="https://www.delt.net/wp-content/uploads/tips-for-learning-web-development.jpg">
+                    <img class="slideshow-img game-img" src="https://www.gamedesigning.org/wp-content/uploads/2020/08/Roblox-Scripting.jpg">
+                    <img class="slideshow-img main-img" src="https://wshop.fi/eng/wp-content/uploads/2021/03/game-programming-03-panorama.jpg">
+                </div>
+                
+            </div>
+            
+        </div>
+        <script>
+            var slideshowIndex = 0; 
+            var websitesText = document.getElementsByClassName("l1")[0];
+            var gamesText = document.getElementsByClassName("l2")[0];
+            var softwareText = document.getElementsByClassName("l3")[0];
+            var websitesSlide = document.getElementsByClassName("web-img")[0];
+            var gamesSlide = document.getElementsByClassName("game-img")[0];
+            var softwareSlide = document.getElementsByClassName("main-img")[0];
+            websitesText.onmouseover = function() {
+                websitesSlide.style.opacity = "100%";
+                gamesSlide.style.opacity = "0%";
+                softwareSlide.style.opacity = "0%";
+            }
+            softwareText.onmouseover = function() {
+                websitesSlide.style.opacity = "0%";
+                gamesSlide.style.opacity = "0%";
+                softwareSlide.style.opacity = "100%";
+            }
+            gamesText.onmouseover = function() {
+                websitesSlide.style.opacity = "0%";
+                gamesSlide.style.opacity = "100%";
+                softwareSlide.style.opacity = "0%";
+            }
+            
+        </script>
+    </body>
+</html>
